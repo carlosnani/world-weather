@@ -114,17 +114,18 @@ body {
         padding: 16px;
         background: #384266;
         display: flex;
+        justify-content: space-between;
     }
     .extraInfo h3{
-        font-size: 38px;
+        font-size: 30px;
         text-align: center;
         margin: 8px;
     }
     .extraInfo p{
-        font-size: 20px;
+        font-size: 12px;
         text-align: center;
         font-weight: 200;
-        margin: 16px;
+        margin: 8px;
     }
     .infoPort {
         margin: auto 0;
