@@ -46,18 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* ----- End reset ----- */
 html {
     box-sizing: border-box;
 }
+/* ----- End reset ----- */
 body {
     background:#90C9FF;
     color:#fff;
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
 }
-
 @media (max-width: 575.98px) { 
     .infoPort a {
         text-decoration: none;
@@ -66,7 +64,7 @@ body {
         margin:4px;
     }
     h1 {
-        font-size: 64px;
+        font-size: 48px;
         text-align: center;
         margin: 32px;
     }
@@ -135,8 +133,6 @@ body {
     }
     
 }
-
-
 @media (min-width: 575.98px) { 
     .infoPort a {
         text-decoration: none;
