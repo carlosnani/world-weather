@@ -5,23 +5,21 @@ function weatherBalloon(cityID) {
     fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&units=metric&appid=' + key)  
     .then(function(resp) { return resp.json() }) 
     .then(function(data) {    
-      draw(data);
+      info(data);
     })
     .catch(function() {
       // catch any errors
     });
   }
-  function draw(data) {
+  function info(data) {
     let cidadeContainer = document.querySelector('.cidadeName');
     let cidadeInfo = document.createTextNode(data.name);
     cidadeContainer.appendChild(cidadeInfo); 
 
-    let celcius = 'º';
-
     let tempContainer = document.querySelector('.tempWeather');
-    let tempInfo = document.createTextNode(Math.floor(data.main.temp) + 'º');
+    let tempInfo = document.createTextNode(Math.floor(data.main.temp) + 'ºc');
     tempContainer.appendChild(tempInfo);
-
+    
 
     // let pInfo = document.createElement('p');
     // let cityName = document.createTextNode(data.name);
@@ -34,12 +32,25 @@ function weatherBalloon(cityID) {
     // divInfo.appendChild(pInfo);
     // console.log(cityTemp);
 
-    console.log(Math.floor(data.main.temp));
+    // console.log(Math.floor(data.main.temp));
   }
   
   
   window.onload = function() {
-    weatherBalloon( 3451190 );
+    weatherBalloon(3451190);
   }
   
+
   
+
+let dataAtual = new Date(); 
+let dia = dataAtual.getDate();
+let mes = dataAtual.getMonth()
+let ano = dataAtual.getFullYear();
+let monName = ["janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro"];
+
+let diaAtual = document.querySelector('.dia').innerHTML = dia + ' ';
+let mesAtual = document.querySelector('.mes').innerHTML = monName[mes - 1] +  ' ';
+let anoAtual = document.querySelector('.ano').innerHTML = ano;
+
+
