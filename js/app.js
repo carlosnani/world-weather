@@ -47,10 +47,10 @@ let dataAtual = new Date();
 let dia = dataAtual.getDate();
 let mes = dataAtual.getMonth()
 let ano = dataAtual.getFullYear();
-let monName = ["janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro"];
+let monName = ["janeiro", "fevereiro", "março", "abril", "Maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro"];
 
 let diaAtual = document.querySelector('.dia').innerHTML = dia + ' ';
-let mesAtual = document.querySelector('.mes').innerHTML = monName[mes - 1] +  ' ';
+let mesAtual = document.querySelector('.mes').innerHTML = monName[mes] +  ' ';
 let anoAtual = document.querySelector('.ano').innerHTML = ano;
 
 
