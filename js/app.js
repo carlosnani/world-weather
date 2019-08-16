@@ -9,7 +9,8 @@ function weatherBalloon(cityID) {
       takeCityHumidity(data);//This function take the City Humidity
       takeCityMax(data); // This function take the Max Temp
       takeCityMin(data); // This function take the Min Temp
-      takeCitypressure(data); //This function take the pressure
+      takeCitypressure(data); //This function take the pressure  
+      iconeWeather(data);    
     })
     .catch(function () {
       console.log('This come with the error from openweathermap');
@@ -49,6 +50,17 @@ function takeCitypressure(data) { // Return the City Tem Min
   let pressureInfo = document.createTextNode(Math.floor(data.main.pressure));
   pressureContainer.appendChild(pressureInfo);
 }
+
+function iconeWeather(data) {
+  let weatherIcon = document.querySelector('.iconeWeather');
+  let icon = data.weather[0].icon;
+  let path = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
+  weatherIcon.src = path;
+  console.log(path);
+}
+
+
+
 
 window.onload = function () {
   weatherBalloon(3451190);
