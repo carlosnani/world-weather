@@ -59,9 +59,6 @@ function iconeWeather(data) {
   console.log(path);
 }
 
-
-
-
 window.onload = function () {
   weatherBalloon(3451190);
 }
