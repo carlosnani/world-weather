@@ -19,20 +19,6 @@ function weatherBalloon(cityID) {
     let tempContainer = document.querySelector('.tempWeather');
     let tempInfo = document.createTextNode(Math.floor(data.main.temp) + 'ºc');
     tempContainer.appendChild(tempInfo);
-    
-
-    // let pInfo = document.createElement('p');
-    // let cityName = document.createTextNode(data.name);
-    // let cityTemp = document.createTextNode(data.main.temp);
-    
-    // let divInfo = document.querySelector('#divInfo');
-    // pInfo.appendChild(cityName);
-    // pInfo.appendChild(cityTemp);    
-    // divInfo.classList.add('info');
-    // divInfo.appendChild(pInfo);
-    // console.log(cityTemp);
-
-    // console.log(Math.floor(data.main.temp));
   }
   
   
