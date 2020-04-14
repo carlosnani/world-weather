@@ -69,18 +69,19 @@ body {
 
 @media (max-width: 759px) { 
     .principal {
-        width: 430px;
+        width: 360px;
         height: auto;        
-        padding: 30px;   
-        margin-top: 50px;;
+        padding: 8px;   
+        margin-top: 50px;
     }
     .principal h1 {
-        font-size: 54px;
+        font-size: 50px;
         text-align: center;
+        font-weight: bold;
         color: #46484b;
     }    
     .principal h2 {
-        font-size: 40px;
+        font-size: 38px;
         text-align: center;
         color: #46484b;
         font-weight: 400;
@@ -130,15 +131,15 @@ body {
         left: -12px;
     } 
     .extraInfo {
-        width: 130px;
-        height: 132px;
+        width: 120px;
+        height: 120px;
     }
     .data {
         display: flex;
         justify-content: space-between;
         align-items: center;        
         flex-flow: row wrap;
-        padding: 20px 50px 10px 50px;
+        padding: 20px 25px 10px 25px;
     }
     .extraInfo{
         padding:12px;
@@ -174,7 +175,7 @@ body {
         text-align: center;
         color: #46484b;
         margin-top: 20px;
-        font-size: 64px;        
+        font-size: 55px;        
        }
       span.info .grau {
         position: relative;
