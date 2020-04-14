@@ -72,16 +72,16 @@ body {
         width: 360px;
         height: auto;        
         padding: 8px;   
-        margin-top: 50px;
+        margin-top: 25px;
     }
     .principal h1 {
-        font-size: 50px;
+        font-size: 34px;
         text-align: center;
         font-weight: bold;
         color: #46484b;
     }    
     .principal h2 {
-        font-size: 38px;
+        font-size: 26px;
         text-align: center;
         color: #46484b;
         font-weight: 400;
@@ -101,7 +101,7 @@ body {
         align-items: center;
     }
     .temp .valor {
-        font-size: 143px;
+        font-size: 130px;
         font-weight: bold;
         color: #46484b;       
     }
@@ -131,8 +131,8 @@ body {
         left: -12px;
     } 
     .extraInfo {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
     }
     .data {
         display: flex;
@@ -177,17 +177,17 @@ body {
         margin-top: 20px;
         font-size: 55px;        
        }
-      span.info .grau {
+       span.info .grau {
         position: relative;
-        top:-60px;
-        left: 105px;
+        top: -58px;
+        left: 86px;
         font-size: 46px;
         color: #46484b;
       }
       span.info .simbolo {
         position: relative;
         top:-95px;
-        left: 102px;
+        left: 86px;
         font-size: 46px;
         color: #46484b;
       }
@@ -195,7 +195,7 @@ body {
         font-size: 32px !important;
         position: relative;
         top: -39px;
-        left: 102px;
+        left: 90px;
         font-size: 46px;
         color: #46484b;
       }
