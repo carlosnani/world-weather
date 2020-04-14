@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,9 +27,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -49,169 +46,396 @@ table {
 html {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 /* ----- End reset ----- */
 body {
-    background:#90C9FF;
-    color:#fff;
-    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background:#dde2e6;
     font-size: 100%;
+    line-height: 1;
+    font-family: 'Lato', sans-serif;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@media (max-width: 575.98px) { 
-    .infoPort a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        margin:4px;
-    }
-    h1 {
-        font-size: 48px;
-        text-align: center;
-        margin: 27px 0px -2px 0;
-    }
-    .principal {
-        width: 95%;
-        height: auto;;
-        background: #293251;
-        margin: 8px auto;
-        border-radius: 8px;
-    }
-    .weatherBox {
-        width: 60%;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .iconeWeather {
-        width: 124px;
-        height: auto;       
-    }
-    input {
-        width: 100%;
-        height: 48px;
-        text-align: center;
-        background: #384266;
-        border: 0;
-        color: #fff;
-        font-size: 24px;    
-        border-radius: 8px 8px 0 0;    
-    }
-    .tempWeather {
-        font-size: 64px; 
-        margin:-16px 0 0;
-    }
-    .cidadeName, .data {
-        font-weight: 200;
-        margin:4px;
-    }  
-    .extraInfo {
-        width: 88%;
-        height: auto;
-        margin: 32px auto;
-        padding: 16px;
-        background: #384266;
-        display: flex;
-        justify-content: space-between;
-    }
-    .extraInfo h3{
-        font-size: 30px;
-        text-align: center;
-        margin: 8px;
-    }
-    .extraInfo p{
-        font-size: 12px;
-        text-align: center;
-        font-weight: 200;
-        margin: 8px;
-    }
-    .infoPort {
-        margin: auto 0;
-        text-align: center;
-        padding: 8px;
-        margin-top: 80px;
-    }
-    
-}
-@media (min-width: 575.98px) { 
-    .infoPort a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        margin:4px;
-    }
-    h1 {
-        font-size: 42px;
-        text-align: center;
-        margin: 16px;
-    }
-    .principal {
-        width: 40%;
-        height: auto;;
-        background: #293251;
-        margin: 32px auto;
-        border-radius: 8px;
-    }
-    .weatherBox {
-        width: 60%;
-        text-align: center;
-        float: left;
-    }
-    .iconeWeather {
-        width: 128px;
-        height: auto;       
-    }
-    input {
-        width: 90%;
-        height: 48px;
-        text-align: center;
-        background: #ffffff;
-        border: 0;
-        color: rgb(102, 102, 102);
-        font-size: 18px;    
-        border-radius: 8px;    
-    }
-    .mainWeather {
-        text-align: center;
-        padding-top: 20px;
-    }
-    .tempWeather {
-        font-size: 64px; 
-        margin: -16px 0px 8px 0px;
-    }
-    .iconeWeather {
-        margin: 8px;
-    }
-    .cidadeName, .data {
-        font-weight: 200;
-        margin:4px;
-    }  
-    .extraInfo {
-        width: 20%;
-        height: auto;
-        margin: 32px auto;
-        background: #384266;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .extraInfo div {
-        padding: 8px;
 
+.neumophicUp {
+    border-radius: 18px;
+    box-shadow: 8px 8px 10px #cccccc, -5px -5px 10px rgb(241, 241, 241);
+  }
+
+@media (max-width: 759px) { 
+    .principal {
+        width: 430px;
+        height: auto;        
+        padding: 30px;   
+        margin-top: 50px;;
     }
-    .extraInfo h3{
-        font-size: 30px;
+    .principal h1 {
+        font-size: 54px;
         text-align: center;
-        margin: 8px;
-    }
-    .extraInfo p{
-        font-size: 12px;
+        color: #46484b;
+    }    
+    .principal h2 {
+        font-size: 40px;
         text-align: center;
-        font-weight: 200;
-        margin: 8px;
+        color: #46484b;
+        font-weight: 400;
+        margin-top: 10px;
     }
-    .infoPort {
-        margin: auto 0;
+    .principal .dataApp {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .info-principal {
+        display: flex;
+        justify-content: center;
+    }
+    .temp {
+        width: 320px;
+        display: flex;
+        align-items: center;
+    }
+    .temp .valor {
+        font-size: 143px;
+        font-weight: bold;
+        color: #46484b;       
+    }
+    .temp .grau {        
+        font-size: 93.8px; 
+        font-weight: bold;            
+        line-height: 0px;          
+        color: #46484b;
+        position: relative;
+        left: 20px;
+        top:-5px
+    }
+    .temp .simbolo {
+        font-size: 93.8px;
+        font-weight: bold;
+        color: #46484b;
+        line-height: 0px;
+        position: relative;
+        left: -20px;
+        top:15px
+    }
+    .iconeWeather {
+        width: 300px;
+        height: auto;
+        position: relative;
+        top: 8px;
+        left: -12px;
+    } 
+    .extraInfo {
+        width: 130px;
+        height: 132px;
+    }
+    .data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        flex-flow: row wrap;
+        padding: 20px 50px 10px 50px;
+    }
+    .extraInfo{
+        padding:12px;
+        margin-bottom: 20px;
+    }
+    .label{
+        width: 100%;
+        display: flex;
+        align-items: center;                
+    }
+    .label span {
+        font-size: 20px;
+        color: #46484b; 
+    }
+    .svg-icon {
+        width: 26px;
+        height: 26px;
+        margin-right: 6px;
+      }      
+      .svg-icon path,
+      .svg-icon polygon,
+      .svg-icon rect {
+        fill: #4691f6;
+      }
+      .svg-icon circle {
+        stroke: #4691f6;
+        stroke-width: 1;
+      }
+      span.info {
+         font-weight: bold;  
+      }
+      span.info p{
         text-align: center;
-        padding: 16px;
-        margin-top: 16px;
+        color: #46484b;
+        margin-top: 20px;
+        font-size: 64px;        
+       }
+      span.info .grau {
+        position: relative;
+        top:-60px;
+        left: 105px;
+        font-size: 46px;
+        color: #46484b;
+      }
+      span.info .simbolo {
+        position: relative;
+        top:-95px;
+        left: 102px;
+        font-size: 46px;
+        color: #46484b;
+      }
+      span.info .porcentagem {  
+        font-size: 32px !important;
+        position: relative;
+        top: -39px;
+        left: 102px;
+        font-size: 46px;
+        color: #46484b;
+      }
+      .pressure span.info p {  
+        font-size: 50px !important;
+        position: relative;
+        font-size: 46px;
+        color: #46484b;
+      }
+      form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .inputCity {
+        text-align: center;
+        color: #46484b;
+        width: 95%;        
+        height: 63px;
+        display: block;
+        margin: 36px 0px 20px 0px;
+        border-radius: 25px;
+        box-shadow: inset 8px 8px 8px #cbced1, inset -4px -4px 4px rgb(246, 246, 246);
+        background:#e0e0e0;
+        border: 0;
+        outline: 0;
+      }
+      .inputCity:focus {
+        border: 0;
+        outline: 0;
+        background:#edf1f4;
+      }
+      .submit {
+        text-align: center;
+        color: #ffffff;
+        width: 96%;        
+        height: 63px;
+        background:#4691f6;
+        margin: 0px 0px 30px 0px;
+        border: 0;
+        outline: 0;  
+        border-radius: 25px;
+        transition: .5s background;
+      }
+      .submit:hover {
+        background:#3d83df;
+      }
+      .submit:active{
+        background:#3a7bcf;
+        box-shadow: 4px 4px 5px #cdced1, -2px -2px 5px #fff;
+      }
+      .infoPortolio{
+          text-align: center;
+          margin: 20px 0 00px 0;
+      }
+      .logoGithub {
+          margin-right: 6px;
+      }   
+}
+@media (min-width: 760px) { 
+    .principal {
+        width: 750px;
+        height: auto;
+        padding: 30px;      
     }
-    
+    .principal h1 {
+        font-size: 54px;
+        text-align: center;
+        color: #46484b;
+        font-weight: bold;
+    }
+    .principal h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #46484b;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .principal .dataApp {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .info-principal {
+        display: flex;
+        justify-content: center;
+    }
+    .temp {
+        width: 320px;
+        display: flex;
+        align-items: center;
+    }
+    .temp .valor {
+        font-size: 143px;
+        font-weight: bold;
+        color: #46484b;       
+    }
+    .temp .grau {        
+        font-size: 93.8px; 
+        font-weight: bold;            
+        line-height: 0px;          
+        color: #46484b;
+        position: relative;
+        left: 20px;
+        top:-5px
+    }
+    .temp .simbolo {
+        font-size: 93.8px;
+        font-weight: bold;
+        color: #46484b;
+        line-height: 0px;
+        position: relative;
+        left: -20px;
+        top:15px
+    }
+    .iconeWeather {
+        width: 300px;
+        height: auto;
+        position: relative;
+        top: 8px;
+        left: -12px;
+    } 
+    .extraInfo {
+        width: 130px;
+        height: 132px;
+    }
+    .data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .extraInfo{
+        padding:12px;
+    }
+    .label{
+        width: 100%;
+        display: flex;
+        align-items: center;                
+    }
+    .label span {
+        font-size: 20px;
+        color: #46484b; 
+    }
+    .svg-icon {
+        width: 26px;
+        height: 26px;
+        margin-right: 6px;
+      }      
+      .svg-icon path,
+      .svg-icon polygon,
+      .svg-icon rect {
+        fill: #4691f6;
+      }
+      .svg-icon circle {
+        stroke: #4691f6;
+        stroke-width: 1;
+      }
+      span.info {
+         font-weight: bold;  
+      }
+      span.info p{
+        text-align: center;
+        color: #46484b;
+        margin-top: 20px;
+        font-size: 64px;        
+       }
+      span.info .grau {
+        position: relative;
+        top:-60px;
+        left: 105px;
+        font-size: 46px;
+        color: #46484b;
+      }
+      span.info .simbolo {
+        position: relative;
+        top:-95px;
+        left: 102px;
+        font-size: 46px;
+        color: #46484b;
+      }
+      span.info .porcentagem {  
+        font-size: 32px !important;
+        position: relative;
+        top: -39px;
+        left: 102px;
+        font-size: 46px;
+        color: #46484b;
+      }
+      .pressure span.info p {  
+        font-size: 50px !important;
+        position: relative;
+        font-size: 46px;
+        color: #46484b;
+      }
+      form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .inputCity {
+        text-align: center;
+        color: #46484b;
+        width: 95%;        
+        height: 63px;
+        display: block;
+        margin: 36px 0px 20px 0px;
+        border-radius: 25px;
+        box-shadow: inset 8px 8px 8px #cbced1, inset -4px -4px 4px rgb(246, 246, 246);
+        background:#e0e0e0;
+        border: 0;
+        outline: 0;
+      }
+      .inputCity:focus {
+        border: 0;
+        outline: 0;
+        background:#edf1f4;
+      }
+      .submit {
+        text-align: center;
+        color: #ffffff;
+        width: 96%;        
+        height: 63px;
+        background:#4691f6;
+        margin: 0px 0px 30px 0px;
+        border: 0;
+        outline: 0;  
+        border-radius: 25px;
+        transition: .5s background;
+      }
+      .submit:hover {
+        background:#3d83df;
+      }
+      .submit:active{
+        background:#3a7bcf;
+        box-shadow: 4px 4px 5px #cdced1, -2px -2px 5px #fff;
+      }
+      .infoPortolio{
+          text-align: center;
+          margin: 20px 0 00px 0;
+      }
+      .logoGithub {
+          margin-right: 6px;
+      }
 }
