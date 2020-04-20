@@ -51,7 +51,7 @@ a {
 }
 /* ----- End reset ----- */
 body {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background:#dde2e6;
     font-size: 100%;
@@ -71,8 +71,8 @@ body {
     .principal {
         width: 360px;
         height: auto;        
-        padding: 8px;   
-        margin-top: 25px;
+        padding: 18px;   
+        margin-top: 35px;
     }
     .principal h1 {
         font-size: 34px;
@@ -260,6 +260,7 @@ body {
         width: 750px;
         height: auto;
         padding: 30px;      
+        margin-top: 60px;;
     }
     .principal h1 {
         font-size: 54px;
