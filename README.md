@@ -11,7 +11,7 @@ https://carlosnani.github.io/world-weather
 
 Tecnologias utilizadas: HTML5, CSS3, Javascripit, API do site site www.openweathermap. 
 
-### O que eu aprendi nesse fazendo nesse projeto:
+### O que eu aprendi fazendo esse projeto:
 
 - [x] Consumir uma api de um serviço externo.
 - [x] Fazer uma consulta em uma api a partir do input de um usuário.
